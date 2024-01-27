@@ -11,6 +11,8 @@ public class wappers {
         Integer i = 10000;
         Long l = 100000L;
 
+        System.out.println(i);
+
         Scanner entrada = new Scanner(System.in);
 
         //convertendo uma string para um inteiro
