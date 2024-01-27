@@ -15,6 +15,7 @@ public class console {
         System.out.printf("Megasena: %d %d %d %d %d %d\n", 1, 2, 3, 4, 5, 6);
         System.out.printf("Salário = %.2f\n", 2365.2645);
 
+        //Entrada de dados pelo teclado
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("Digite o seu nome: ");
