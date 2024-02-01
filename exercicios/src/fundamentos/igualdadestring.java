@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class igualdadestring {
     public static void main(String[] args){
+
+        //compara o endereço de memória
         System.out.println("2" == "2");
 
         String s1 = new String("2");
