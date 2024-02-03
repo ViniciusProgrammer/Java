@@ -2,14 +2,16 @@ package classe;
 
 public class Produtoteste {
     public static void main(String[] args){
-        Produto x = new Produto();
+        //Construtor com parametros para produto x
+        Produto x = new Produto("Imprenssora", 3560.50, 0.30);
+
+        //x.nome = "Imprenssora";
+        //x.preco = 3560.50;
+        //x.desconto = 0.30;
+
+        //Construtor padrão para produto y
         var y = new Produto();
-        double mediapreco, valortotal;
-
-        x.nome = "Imprenssora";
-        x.preco = 3560.50;
-        x.desconto = 0.30;
-
+        
         y.nome = "Monitor";
         y.preco = 750.89;
         y.desconto = 0.15;
