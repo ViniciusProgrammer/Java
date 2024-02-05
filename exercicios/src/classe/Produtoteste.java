@@ -3,7 +3,7 @@ package classe;
 public class Produtoteste {
     public static void main(String[] args){
         //Construtor com parametros para produto x
-        Produto x = new Produto("Imprenssora", 3560.50, 0.30);
+        Produto x = new Produto("Imprenssora", 3560.50);
 
         //x.nome = "Imprenssora";
         //x.preco = 3560.50;
@@ -14,15 +14,18 @@ public class Produtoteste {
         
         y.nome = "Monitor";
         y.preco = 750.89;
-        y.desconto = 0.15;
+
+        //alterando o desconto para todos os produtos, setamos 25% de desconto na classe mas alteramos para 29% nessa parte do codigo
+        //esse tipo de alteração é como se fosse uma variável global, ou como se fosse um endereço de memória, modificando em um lugar, modifica em todos
+        Produto.desconto = 0.29;
 
         System.out.println(x.nome);
         System.out.println(y.nome);
 
         System.out.println("\nValores individuais dos produtos\n");
 
-        System.out.println(x.nome + " = " + x.preco);
-        System.out.println(y.nome + " = " + y.preco);
+        System.out.println(x.nome + " = " + x.precoComDesconto());
+        System.out.println(y.nome + " = " + y.precoComDesconto());
 
         double precofinal = x.precoComDesconto();
         double precofinal2 = y.precoComDesconto();

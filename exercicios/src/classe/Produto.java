@@ -3,7 +3,7 @@ package classe;
 public class Produto {
     String nome;
     double preco;
-    double desconto;
+    static double desconto = 0.25;
 
       //Construtor padrão para produto y lá na classe Produtoteste
       Produto(){
@@ -11,10 +11,9 @@ public class Produto {
       }
 
     //COntrutor com parametros para produto x lá na classe Produtoteste
-    Produto(String nomeInicial, double precoInicial, double descontoInicial){
+    Produto(String nomeInicial, double precoInicial){
         nome = nomeInicial;
         preco = precoInicial;
-        desconto = descontoInicial;
     }
 
     double precoComDesconto(){
