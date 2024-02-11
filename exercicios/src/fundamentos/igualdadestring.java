@@ -27,5 +27,6 @@ public class igualdadestring {
          o next() por padrão já tira os epsaços em branco antes e depois da string
          o nexLine() não tira os espaços
         */
+        entrada.close();
     }
 }
